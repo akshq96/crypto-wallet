@@ -32,7 +32,6 @@ function handler() {
         document.getElementById("link").style.display = "block";
     });
 }
-
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById("check_balance").addEventListener('click', checkbalance);
 });
