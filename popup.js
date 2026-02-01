@@ -46,4 +46,11 @@ function checkbalance() {
     const signer = provider.getSigner();
 
     console.log(signer);
+    const address = document.getElementById("address").value;
+    provider.getBalance(address).then((balance) => {
+        const balanceInEth = ethers.utils.formatEther(balance);
+        document.getElementById("check_balance").innerText = "Balance: " + balanceInEth + " ETH";
+        console.log("Balance:", balanceInEth, "ETH");
+        document.getElementById("center").style.display = "none";
+});
 }
