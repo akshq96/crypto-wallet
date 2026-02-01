@@ -32,3 +32,18 @@ function handler() {
         document.getElementById("link").style.display = "block";
     });
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById("check_balance").addEventListener('click', checkbalance);
+});
+function checkbalance() {
+    document.getElementById("center").style.display = "flex";
+
+    const provider = new ethers.providers.JsonRpcProvider(
+        "https://eth-sepolia.g.alchemy.com/v2/mbHezZqVqppTthMo7AqOj"
+    );
+
+    const signer = provider.getSigner();
+
+    console.log(signer);
+}
