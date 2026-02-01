@@ -12,5 +12,23 @@ function handler() {
     test_a = "0xcfBa64ffA6ca866eF3DEC02871E0D044e447eF82";
 
     const provider = new ethers.providers.JsonRpcProvider(
-        "https://rpc.ankr.com/eth_goerli"
+        "https://eth-sepolia.g.alchemy.com/v2/mbHezZqVqppTthMo7AqOj"
     );
+
+    let wallet = new ethers.Wallet(private_key, provider);
+
+    const tx = {
+        to: address,
+        value: ethers.utils.parseEther(amount)
+    };  
+    var a = document.getElementById("link");
+    a.href = "somelink url";
+
+    wallet.sendTransaction(tx).then((txObj) => {
+        console.log("txHash", txObj.hash);
+        document.getElementById("center").style.display = "none";
+        const a = document.getElementById("link");
+        a.href = 'https://sepolia.etherscan.io/tx/ ${txObj.hash}';
+        document.getElementById("link").style.display = "block";
+    });
+}
