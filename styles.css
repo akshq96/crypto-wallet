@@ -1,0 +1,11 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 0.4em;
+    background-color: black;
+    /* width: 300px;
+    margin: 0 auto; */
+}
