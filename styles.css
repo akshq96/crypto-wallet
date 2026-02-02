@@ -9,3 +9,15 @@
     /* width: 300px;
     margin: 0 auto; */
 }
+#heading{
+    color: white;
+    text-align: center;
+    margin: 2em;
+    font-size: 1emx;
+}
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+}
