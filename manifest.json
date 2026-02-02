@@ -1,0 +1,16 @@
+{
+    "name": "CryptoTracker",
+    "description": "Crypto wallet extension (Sepolia testnet)",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+      "default_popup": "index.html"
+    },
+    "permissions": ["storage"],
+    "host_permissions": [
+      "https://eth-sepolia.g.alchemy.com/*"
+    ]
+  }
+  
+  
+  
