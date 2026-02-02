@@ -1,19 +1,17 @@
-.form{
+/* .form{
     display: flex;
     flex-direction: column;
     gap: 15px;
     padding-left: 2em;
     padding-right: 2em;
     padding-bottom: 0.4em;
-    background-color: black;
-    /* width: 300px;
-    margin: 0 auto; */
+    background-color: rgba(15, 168, 33, 0.141);
 }
 #heading{
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
     margin: 2em;
-    font-size: 1emx;
+    font-size: 1em;
 }
 .field {
     display: flex;
@@ -29,14 +27,14 @@
 .input-icon{
     height: 1.3em;
     width: 1.3em;
-    fill: rgb(red, green, blue);
+    fill: rgb(rgb(220, 14, 120), green, blue);
 }
 .input-field{
     background: none;
     border: none;
     outline: none;
     width: 100%;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 .form .btn{
     display: flex;
@@ -54,7 +52,7 @@
     outline: none;
     transition: 0.4s ease-in-out;
     background-image: linear-gradient(to right, #ff105f, #ffad06);
-    color: rgb(red, green, blue);
+    color: rgb(rgb(204, 149, 21), green, blue);
 }
 .button1:hover{
     background-image: linear-gradient(to right, #ffad06, #ff105f);
@@ -74,7 +72,7 @@
 }
 .button2:hover{
     background-image: linear-gradient(to right, #38ef7d, #11998e);
-    color: rgba(56, 239, 125, 0.7);
+    color: rgba(204, 90, 8, 0.7);
 }
 .button3{
     margin-bottom: 3em;
@@ -89,7 +87,7 @@
 }
 .button3:hover{
     background-image: linear-gradient(to right, #2948ff, #396afc);
-    color: rgba(41, 72, 255, 0.7);
+    color: rgba(116, 41, 255, 0.7);
 }
 .card{
     background-image: linear-gradient(to right, #434343, #000000);
@@ -194,4 +192,355 @@ textarea{
 .loader .bar12{
     transform: rotate(330deg) translate(0, -130%);
     animation-delay: -0.1s;
-}
+} 
+ */
+
+
+
+ 
+/* .button1.loading {
+    background: linear-gradient(135deg, #555, #999);
+  }
+  .button1.success {
+    background: linear-gradient(135deg, #00ff9d, #00c853);
+    animation: pop 0.6s;
+  }
+  .button1.error {
+    background: linear-gradient(135deg, #17ff64, #00d515);
+    animation: shake 0.4s;
+  }
+  
+  .button3.pulse {
+    animation: pulse 1.4s infinite;
+  }
+  
+  #link {
+    display: none;
+    margin-top: 10px;
+    animation: fadeIn 0.6s ease;
+  }
+  
+  
+  @keyframes pop {
+    40% { transform: scale(1.15); }
+  }
+  @keyframes shake {
+    25% { transform: translateX(-6px); }
+    50% { transform: translateX(6px); }
+  }
+  @keyframes pulse {
+    70% { box-shadow: 0 0 0 18px rgba(56,239,125,0); }
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+.button1.loading {
+    background: linear-gradient(135deg, #555, #999);
+  }
+  .button1.success {
+    background: linear-gradient(135deg, #00ff9d, #00c853);
+    animation: pop 0.6s;
+  }
+  .button1.error {
+    background: linear-gradient(135deg, #17ff26, #13d708);
+    animation: shake 0.4s;
+  }
+  
+  .button3.pulse {
+    animation: pulse 1.4s infinite;
+  }
+  
+  #link {
+    display: none;
+    margin-top: 10px;
+    animation: fadeIn 0.6s ease;
+  }
+  
+  
+  @keyframes pop {
+    40% { transform: scale(1.15); }
+  }
+  @keyframes shake {
+    25% { transform: translateX(-6px); }
+    50% { transform: translateX(6px); }
+  }
+  @keyframes pulse {
+    70% { box-shadow: 0 0 0 18px rgba(56,239,125,0); }
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+     */
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  
+  :root {
+    --bg-dark: #0f2027;
+    --bg-mid: #203a43;
+    --bg-light: #2c5364;
+  
+    --primary: #00ffa3;
+    --secondary: #1b5cff;
+    --danger: #ff1744;
+  
+    --glass: rgba(255, 255, 255, 0.12);
+    --glass-strong: rgba(255, 255, 255, 0.18);
+  }
+
+  body {
+    min-height: 100vh;
+    background: radial-gradient(
+        circle at top left,
+        #1b5cff,
+        transparent 40%
+      ),
+      radial-gradient(
+        circle at bottom right,
+        #00ffa3,
+        transparent 40%
+      ),
+      linear-gradient(135deg, var(--bg-dark), var(--bg-mid), var(--bg-light));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    color: white;
+  }
+  
+  .card {
+    width: 100%;
+    max-width: 480px;
+    border-radius: 26px;
+    background: var(--glass);
+    backdrop-filter: blur(18px);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.55);
+    animation: cardEnter 0.8s ease forwards;
+  }
+ 
+  .form {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    animation: floatCard 6s ease-in-out infinite;
+  }
+  
+  #heading {
+    text-align: center;
+    font-size: 1.35rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    opacity: 0.95;
+    margin-bottom: 6px;
+  }
+  
+  .field {
+    background: white;
+    border-radius: 18px;
+    padding: 14px 16px;
+    transition: 
+      box-shadow 0.3s ease,
+      transform 0.25s ease;
+  }
+  
+  .field:focus-within {
+    transform: translateY(-3px);
+    box-shadow: 
+      0 0 0 2px rgba(0, 255, 163, 0.7),
+      0 15px 30px rgba(0, 0, 0, 0.25);
+  }
+  
+  .input-field {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 0.95rem;
+    color: #111;
+  }
+  
+  textarea.input-field {
+    resize: none;
+    min-height: 90px;
+  }
+  
+  .center {
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loader {
+    position: relative;
+    width: 48px;
+    height: 48px;
+  }
+  
+  .loader div {
+    width: 8%;
+    height: 18%;
+    background: var(--primary);
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    opacity: 0;
+    border-radius: 50px;
+    animation: fade 1s linear infinite;
+  }
+  
+  .loader div:nth-child(n) {
+    transform-origin: center 120%;
+  }
+  
+  @keyframes fade {
+    from { opacity: 1; }
+    to { opacity: 0.25; }
+  }
+
+  small {
+    text-align: center;
+  }
+  
+  #link {
+    display: none;
+    color: var(--primary);
+    font-size: 0.8rem;
+    text-decoration: none;
+    animation: fadeIn 0.6s ease;
+  }
+  
+  .btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .button1 {
+    width: 65%;
+    padding: 14px;
+    border-radius: 18px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    color: #0b0b0b;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    transition:
+      transform 0.25s ease,
+      box-shadow 0.25s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .button1:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 18px 40px rgba(0, 255, 163, 0.45);
+  }
+  
+
+  .button1.loading {
+    background: linear-gradient(135deg, #666, #999);
+    pointer-events: none;
+  }
+  
+  .button1.success {
+    background: linear-gradient(135deg, #00ff9d, #00c853);
+    animation: successPop 0.6s ease;
+  }
+  
+  
+  .button1.error {
+    background: linear-gradient(135deg, #ff1744, #d50000);
+    animation: shake 0.4s ease;
+  }
+  
+  .button3 {
+    margin-top: 14px;
+    width: 100%;
+    padding: 12px;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.22);
+    color: white;
+    transition: background 0.25s ease;
+  }
+  
+  .button3:hover {
+    background: rgba(255, 255, 255, 0.35);
+  }
+  
+  .button3.pulse {
+    animation: pulse 1.4s infinite;
+  }
+ 
+  @keyframes cardEnter {
+    from {
+      opacity: 0;
+      transform: translateY(40px) scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+  
+  @keyframes floatCard {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-6px); }
+    100% { transform: translateY(0); }
+  }
+  
+  @keyframes successPop {
+    0%   { transform: scale(1); }
+    40%  { transform: scale(1.15); }
+    100% { transform: scale(1); }
+  }
+  
+  @keyframes shake {
+    0%   { transform: translateX(0); }
+    25%  { transform: translateX(-6px); }
+    50%  { transform: translateX(6px); }
+    75%  { transform: translateX(-4px); }
+    100% { transform: translateX(0); }
+  }
+  
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(0, 255, 163, 0.7);
+    }
+    70% {
+      box-shadow: 0 0 0 18px rgba(0, 255, 163, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(0, 255, 163, 0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      max-width: 100%;
+    }
+  
+    .button1 {
+      width: 100%;
+    }
+  }
+  
