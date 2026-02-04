@@ -14,6 +14,6 @@ and interacting with blockchain RPC endpoints using a clean popup UI.
 - 📊 Check wallet balance instantly
 - 🔗 View transaction details after execution
 - 🧩 Runs as a browser extension popup
-- 🌐 Direct blockchain interaction (no external wallet dependency)
+-  Direct blockchain interaction (no external wallet dependency)
 
 ---
