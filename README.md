@@ -10,7 +10,7 @@ and interacting with blockchain RPC endpoints using a clean popup UI.
 
 ## ✨ Features
 
-- 💸 Send crypto assets to a wallet address
+-  Send crypto assets to a wallet address
 -  Check wallet balance instantly
 -  View transaction details after execution
 -  Runs as a browser extension popup
