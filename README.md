@@ -18,8 +18,6 @@ and interacting with blockchain RPC endpoints using a clean popup UI.
 
 ---
 
----
-
 ## 🧠 Project Goal
 
 This project was created to understand:
