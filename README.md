@@ -17,3 +17,16 @@ and interacting with blockchain RPC endpoints using a clean popup UI.
 -  Direct blockchain interaction (no external wallet dependency)
 
 ---
+
+---
+
+## 🧠 Project Goal
+
+This project was created to understand:
+
+- How wallet logic works behind the scenes
+- How browser extensions interact with blockchain networks
+- How transactions are constructed, signed, and sent
+- How RPC-based communication works in Web3
+
+It is intended for **learning and experimentation**, not production use.
