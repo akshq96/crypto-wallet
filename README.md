@@ -28,7 +28,6 @@ This project was created to understand:
 - How RPC-based communication works in Web3
 
 It is intended for **learning and experimentation**, not production use.
-
 ---
 ## 🛠️ Tech Stack
 
