@@ -51,6 +51,7 @@ crypto-wallet-extension/
 ├── ether.js          # Blockchain library
 ├── manifest.json     # Extension configuration
 └── README.md
+```
 ---
 
 ⚙️ Installation
