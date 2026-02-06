@@ -62,4 +62,10 @@ crypto-wallet-extension/
 
 2)Open your browser and navigate to:
   chrome://extensions/
+
+3)Enable Developer Mode
+4)Click Load Unpacked
+5)Select the project folder
+6)Click the extension icon to open the wallet popup
+
 ```
