@@ -39,3 +39,15 @@ It is intended for **learning and experimentation**, not production use.
 - Browser Extension APIs (Manifest V3)
 
 ---
+
+## 📂 Project Structure
+
+```txt
+crypto-wallet-extension/
+│
+├── index.html        # Popup UI
+├── styles.css        # Styling & animations
+├── popup.js          # Wallet logic
+├── ether.js          # Blockchain library
+├── manifest.json     # Extension configuration
+└── README.md
