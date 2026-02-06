@@ -56,8 +56,10 @@ crypto-wallet-extension/
 
 ## ⚙️ Installation
 
-1)Clone the repository
+```txt
+1) Clone the repository
   git clone https://github.com/your-username/crypto-wallet-extension.git
 
-2)Open your browser and navigate to:
+2) Open your browser and navigate to:
   chrome://extensions/
+```
