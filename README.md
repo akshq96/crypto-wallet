@@ -71,3 +71,18 @@ crypto-wallet-extension/
 ```
 ---
 
+## 🔄 How It Works
+
+```txt
+User Input
+   ↓
+Popup UI
+   ↓
+Wallet Logic (popup.js)
+   ↓
+ethers.js
+   ↓
+RPC Endpoint
+   ↓
+Blockchain Network
+
