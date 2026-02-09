@@ -69,3 +69,6 @@ crypto-wallet-extension/
 6)Click the extension icon to open the wallet popup
 
 ```
+---
+
+## 🔄 How It Works
