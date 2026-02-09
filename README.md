@@ -96,4 +96,13 @@ Blockchain Network
 - Use only for development and testing purposes  
 
 ---
+## Current Limitations
+
+- Basic transaction functionality only  
+- Single active network at a time  
+- No token or NFT support  
+- No transaction history  
+- No persistent wallet state  
+
+---
 
