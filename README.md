@@ -86,3 +86,11 @@ RPC Endpoint
    ↓
 Blockchain Network
 
+```
+---
+## 🔐 Security Notice
+This project does not include advanced security mechanisms
+No encrypted storage or account management
+Not recommended for real assets
+Use only for development and testing purposes
+
