@@ -105,4 +105,13 @@ Blockchain Network
 - No persistent wallet state  
 
 ---
+## 🧭 Future Improvements
 
+- Wallet creation & management  
+- Encrypted local storage  
+- Multi-network support  
+- Token transfers  
+- Transaction history  
+- Improved UX and validation  
+
+---
